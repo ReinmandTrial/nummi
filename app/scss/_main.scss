@@ -1,0 +1,95 @@
+// calc(210px + (295 - 210) * ((100vw - 320px) / (1920 - 320)))
+
+.main-page {
+   .header__content {
+      justify-content: flex-end;
+      position: relative;
+   }
+   .logo {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+   }
+}
+
+.page-main {
+   &__content {
+   }
+}
+.container {
+}
+.search-panel {
+   padding: 40px 0;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__title {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+   .search {
+      margin-bottom: 10px;
+      max-width: 800px;
+      width: 100%;
+      padding-left: unset;
+      &__input {
+         width: 100%;
+         font-family: "PT Sans";
+      }
+
+      &__icon {
+      }
+   }
+}
+h1,
+.h1 {
+   font-size: 26px;
+   font-weight: 400;
+}
+
+.filter {
+   padding: 15px 0 65px;
+   display: flex;
+   &__column {
+      width: calc(25% - 10px);
+      padding-right: 10px;
+   }
+
+   &__section {
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__title {
+   }
+
+   &__container {
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+
+   &__block {
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__value {
+   }
+
+   &__row {
+   }
+
+   &__subvalue {
+   }
+
+   &__subtitle {
+   }
+
+   &__subcolumn {
+   }
+}

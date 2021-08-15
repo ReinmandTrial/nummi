@@ -1,0 +1,66 @@
+// MAX-WIDTH 1600PX breakpoints START
+@media (max-width: 1600px) {
+}
+// MAX-WIDTH 1600PX breakpoints END
+
+// MAX-WIDTH 1399.98PX breakpoints START
+@media (max-width: 1399.98px) {
+}
+// MAX-WIDTH 1399.98PX breakpoints END
+
+// MAX-WIDTH 1199.98PX breakpoints START
+@media (max-width: 1199.98px) {
+}
+// MAX-WIDTH 1199.98PX breakpoints END
+
+// MAX-WIDTH 991.98PX breakpoints START
+@media (max-width: 991.98px) {
+}
+// MAX-WIDTH 991.98PX breakpoints END
+
+// MAX-WIDTH 767.98PX breakpoints START
+@media (max-width: 767.98px) {
+   .main-page {
+      .header__content {
+         justify-content: space-between;
+         height: 63px;
+      }
+      .logo {
+         position: static;
+         transform: translate(0, 0);
+      }
+      .header {
+         padding: 0;
+      }
+   }
+   .header {
+      padding: 2px 0px 11px;
+      &__content {
+         height: unset;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      &__contact-phone {
+         width: unset;
+      }
+   }
+   .logo {
+      width: unset;
+      padding: 15px;
+   }
+   .search {
+      margin-top: 7px;
+      order: 3;
+      width: 100%;
+      padding-left: unset;
+   }
+}
+// MAX-WIDTH 767.98PX breakpoints END
+
+// MAX-WIDTH 576.98PX breakpoints START
+@media (max-width: 575.98px) {
+   .logo {
+      padding: 15px 0;
+   }
+}
+// MAX-WIDTH 576.98PX breakpoints END
