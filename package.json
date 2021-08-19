@@ -19,5 +19,10 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1",
     "swiper": "^6.7.0"
+  },
+  "dependencies": {
+    "easyzoom": "^2.5.3",
+    "ez-plus": "^1.2.1",
+    "jquery-lazy": "^1.7.11"
   }
 }
