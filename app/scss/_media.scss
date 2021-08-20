@@ -38,6 +38,25 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+   .page-product {
+      &__wrapper {
+         width: calc(68% - 10px);
+      }
+      &__img-box {
+         width: calc(32% - 10px);
+      }
+      &__img {
+         height: unset;
+         & img {
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+
+   .popup-modal-dismiss {
+      right: 10px;
+   }
    .page-catalog {
       &__wrapper {
          width: 75%;
@@ -85,7 +104,14 @@
       &__img {
          width: 100%;
          max-width: 350px;
-         margin: 0 auto;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         float: unset;
+         & img {
+            width: 100%;
+            height: 100%;
+         }
       }
       &__wrapper {
          width: 100%;
@@ -216,6 +242,15 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .slider-img-popup {
+      padding: 20px 0;
+      &__btn-back,
+      &__btn-next {
+         width: 60px;
+         height: 60px;
+         top: calc(50% - 30px);
+      }
+   }
    .card-product {
       flex-direction: column;
       &__img {

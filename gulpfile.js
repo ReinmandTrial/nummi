@@ -42,25 +42,32 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/swiper/swiper-bundle.min.js',
-    'node_modules/jquery-lazy/jquery.lazy.min.js',
     'node_modules/easyzoom/src/easyzoom.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+    'node_modules/vanilla-lazyload/dist/lazyload.min.js',
     'app/js/main.js'
   ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js'))
+    // .pipe(concat('main.min.js'))
+    // .pipe(uglify())
+    .pipe(dest('app/dist/js'))
     .pipe(browserSync.stream())
 }
 
 function styles() {
-  return src('app/scss/style.scss')
-    .pipe(scss({ outputStyle: 'compressed' }))
-    .pipe(concat('style.min.css'))
+  return src([
+    'app/scss/style.scss',
+    "node_modules/swiper/swiper-vars.scss",
+    "node_modules/swiper/swiper.scss",
+    "node_modules/magnific-popup/dist/magnific-popup.scss",
+    "node_modules/easyzoom/css/easyzoom.scss",
+  ])
+    .pipe(scss(/* { outputStyle: 'compressed' } */))
+    // .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 version'],
       grid: true
     }))
-    .pipe(dest('app/css'))
+    .pipe(dest('app/dist/css'))
     .pipe(browserSync.stream())
 }
 
