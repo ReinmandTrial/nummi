@@ -553,11 +553,7 @@ h2,
       display: flex;
       flex-wrap: wrap;
    }
-   &__phone-num-img,
-   &__whatsapp-img,
-   &__viber-img,
-   &__telegram-img,
-   &__email-img {
+   &__contacts-item-img {
       width: 25px;
       height: 25px;
       margin-right: 4px;
@@ -568,11 +564,7 @@ h2,
       }
    }
 
-   &__whatsapp,
-   &__viber,
-   &__telegram,
-   &__email,
-   &__phone-num {
+   &__contacts-item {
       min-width: 150px;
       display: flex;
       align-items: center;

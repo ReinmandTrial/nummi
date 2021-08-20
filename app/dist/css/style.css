@@ -810,17 +810,17 @@ h2,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.page-product__phone-num-img, .page-product__whatsapp-img, .page-product__viber-img, .page-product__telegram-img, .page-product__email-img {
+.page-product__contacts-item-img {
   width: 25px;
   height: 25px;
   margin-right: 4px; }
-  .page-product__phone-num-img img, .page-product__whatsapp-img img, .page-product__viber-img img, .page-product__telegram-img img, .page-product__email-img img {
+  .page-product__contacts-item-img img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain; }
 
-.page-product__whatsapp, .page-product__viber, .page-product__telegram, .page-product__email, .page-product__phone-num {
+.page-product__contacts-item {
   min-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,7 +832,7 @@ h2,
   font-weight: 600;
   padding: 10px 15px 10px 0;
   margin-right: 5px; }
-  .page-product__whatsapp > *, .page-product__viber > *, .page-product__telegram > *, .page-product__email > *, .page-product__phone-num > * {
+  .page-product__contacts-item > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto; }
