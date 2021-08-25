@@ -453,7 +453,7 @@ h1,
   padding: 15px 20px; }
 
 .page-catalog__text {
-  margin: 20px 0;
+  margin: 20px auto;
   max-width: 750px;
   line-height: 1.45; }
 
