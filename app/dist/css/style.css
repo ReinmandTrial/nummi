@@ -452,15 +452,20 @@ h1,
   max-width: 1200px;
   padding: 15px 20px; }
 
+.page-catalog__text-block {
+  width: 100%; }
+
 .page-catalog__text {
   margin: 20px auto;
-  max-width: 750px;
+  max-width: 860px;
   line-height: 1.45; }
 
 .page-catalog__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 20px; }
 
 .page-catalog__wrapper {
@@ -1132,6 +1137,8 @@ h2,
   .page-catalog__sidebar {
     width: 100%;
     margin-left: unset; }
+  .page-catalog__text {
+    margin: 0; }
   .page-search__container {
     display: block; }
   .page-search__wrapper {
