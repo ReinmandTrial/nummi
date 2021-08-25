@@ -242,6 +242,26 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .header__contact-phone {
+      padding-right: unset;
+      font-size: 13px;
+      .icon-viber {
+         width: 19px;
+         height: 19px;
+         margin-right: 3px;
+      }
+      .icon-whatsapp {
+         width: 21px;
+         height: 21px;
+         margin-right: 3px;
+      }
+      .icon-telegram {
+         width: 18px;
+         height: 18px;
+         transform: translateY(-1px);
+         margin-right: 5px;
+      }
+   }
    .slider-img-popup {
       padding: 20px 0;
       &__btn-back,
